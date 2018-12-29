@@ -87,6 +87,24 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.btn-call {
+  background-color: #20e24a;
+  border-color: #20e24a;
+  color: white;
+  padding: 0.1rem 0.2rem;
+}
+
+.btn-call:active, .btn-call:focus, .btn-call:hover {
+  background-color: #19c23e !important;
+  border-color: #19c23e !important;
+  color: white;
+}
+
+.btn-call:active, .btn-call:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
 ::selection {
   background: #fed136;
   text-shadow: none;
@@ -594,6 +612,15 @@ section#contact {
 
 section#contact .section-heading {
   color: #fff;
+}
+
+section#contact .section-text {
+  font-size: 100%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: white;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 section#contact .form-group {

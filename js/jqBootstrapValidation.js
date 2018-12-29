@@ -9,7 +9,7 @@
  */
 
 (function($) {
-
+  
   var createdElements = [];
 
   var defaults = {
