@@ -38,10 +38,11 @@
     // The marker, positioned at Uluru
     var marker = new google.maps.Marker({position: vaidoto, map: map});
   } 
+  removeButtonIfMobile()
   
   $(document).ready(function() {
     initMap()
-    removeButtonIfMobile()
+    
   })
 
   // Smooth scrolling using jQuery easing
