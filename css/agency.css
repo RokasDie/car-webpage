@@ -714,9 +714,14 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 }
 
 #map {
-  margin: 10px 0px;
   height: 400px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+
+@media only screen and (max-width: 765px) {
+  #map {
+    margin: 10px 0px;
+  }
 }
