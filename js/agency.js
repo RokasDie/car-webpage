@@ -43,10 +43,7 @@
   //stuff for mobile
   // removeButtonIfMobile()
   
-  $(document).ready(function() {
-    initMap()
-    
-  })
+ 
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
@@ -99,3 +96,15 @@
   
 
 })(jQuery); // End of use strict
+
+//Initialise google maps
+function initMap() {
+  // The location of Uluru
+  var vaidoto = {lat: 54.860025, lng: 23.954911};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: vaidoto});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: vaidoto, map: map});
+} 
+//stuff for mobile
