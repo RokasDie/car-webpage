@@ -154,9 +154,9 @@
             <br>
             <div>Tel. nr: <a class="btn btn-call text-uppercase js-scroll-trigger" href="tel:+37068845247">+370 688 45 247</a></div>
           </div>
-          <div class="col-md-7">
-            <div id="map" class="map"></div>
-          </div>
+          <div class="col-md-7" data-lat="54.860025" data-lng="23.954911">
+              <div id="map" class="map"></div>
+            </div>
         </div>
       </div>
     </section>
@@ -177,22 +177,7 @@
 
   
 
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I&callback=initMap">
-</script>
 
-<script>
-    //Initialise google maps
-    function initMap() {
-      // The location of Uluru
-      var vaidoto = { lat: 54.860025, lng: 23.954911 };
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-        document.getElementById('map'), { zoom: 15, center: vaidoto });
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({ position: vaidoto, map: map });
-    }
-  </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -207,6 +192,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGl
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Scripts for Google Maps API -->
+    <script src="js/maps.min.js"></script>
 
   </body>
 
