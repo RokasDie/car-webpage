@@ -80,28 +80,7 @@
     $('.navbar').removeClass('d-none');
   })
 
-  $(document).ready(function() {
-    //Initialise google maps
-  function initMap() {
-    // The location of Uluru
-    var vaidoto = { lat: 54.860025, lng: 23.954911 };
-    // The map, centered at Uluru
-    var map = new google.maps.Map(
-      document.getElementById('map'), { zoom: 15, center: vaidoto });
-    // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({ position: vaidoto, map: map });
-  }
-
-  function loadScript() {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I&callback=initMap";
-        document.body.appendChild(script);
-      }
-
-      loadScript()
-  })
-
+  
   
 
 })(jQuery); // End of use strict
