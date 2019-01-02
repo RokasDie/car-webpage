@@ -752,7 +752,7 @@
         if (api_key) {
           var options = {
             rootMargin: '0px',
-            threshold: 0.75
+            threshold: 1
           }
       
           var map = document.getElementById('map')
