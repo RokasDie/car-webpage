@@ -733,15 +733,15 @@
 
     function google_maps_init() {
         'use strict'
-        var roemerberg = {lat: 54.860025, lng: 23.954911}
+        var vaidoto183 = {lat: 54.860025, lng: 23.954911}
       
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
-          center: roemerberg
+          center: vaidoto183
         })
       
         var marker = new google.maps.Marker({
-          position: roemerberg,
+          position: vaidoto183,
           map: map
         })
       }
@@ -752,7 +752,7 @@
         if (api_key) {
           var options = {
             rootMargin: '100px',
-            threshold: 0
+            threshold: 0.25
           }
       
           var map = document.getElementById('map')

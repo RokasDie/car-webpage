@@ -9,29 +9,6 @@
   //     return true
   //   }
   // }
-
-  // var removeButton = function () {
-  //   var removableMobile = document.getElementById("mobile-remove")
-  //   var buttonsDiv = document.getElementById("main-buttons")
-  //   buttonsDiv.removeChild(removableMobile)
-  // }
-
-  // var removeButtonIfMobile = function() {
-  //   if (checkIfMobile()) {
-  //   var buttonsDiv = document.getElementById("main-buttons")
-  //   var callButton = document.createElement("a")
-  //   callButton.setAttribute('class', 'btn btn-primary-call btn-xl text-uppercase js-scroll-trigger')
-  //   callButton.setAttribute('href', 'tel:+37068845247');
-  //   callButton.text = 'Skambinti +37068845247'
-  //   buttonsDiv.append(callButton)
-
-  //   removeButton()
-  // }
-  // }
-
-  
-
-  
  
 
   // Smooth scrolling using jQuery easing
