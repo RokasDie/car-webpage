@@ -9,11 +9,6 @@
     <meta name="author" content="">
 
     <title>Automobilių taisykla Vaidoto g. 183</title>
-    
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <style>
-    </style>
 
     <!-- Custom fonts for this template -->
     
@@ -22,8 +17,7 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <!-- <link href="css/agency.min.css" rel="stylesheet"> -->
+    
 
   </head>
 
@@ -260,7 +254,6 @@
           <div class="col-md-4">
             <span class="copyright">Vaidoto g. 183 (Panemunė), 45392 Kaunas</span>
           </div>
-          
         </div>
       </div>
     </footer>
@@ -269,7 +262,7 @@
 
 
 <noscript id="deferred-styles">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/agency.min.css" rel="stylesheet">
 </noscript>
@@ -291,12 +284,57 @@
     <script src="js/agency.min.js"></script>
 
      <!-- Scripts for Google Maps API -->
-     <script src="js/maps.min.js"></script>
+     <!-- <script src="js/maps.min.js"></script> -->
 
     <!-- Scripts for loading optimizations and others -->
     <script src="js/other.min.js"></script>
 
-
+<script>
+function google_maps_init() {
+    'use strict'
+    var roemerberg = {lat: 54.860025, lng: 23.954911}
+  
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: roemerberg
+    })
+  
+    var marker = new google.maps.Marker({
+      position: roemerberg,
+      map: map
+    })
+  }
+  
+  function google_maps_lazyload(api_key) {
+    'use strict'
+  
+    if (api_key) {
+      var options = {
+        rootMargin: '100px',
+        threshold: 0
+      }
+  
+      var map = document.getElementById('map')
+  
+      var observer = new IntersectionObserver(
+        function(entries, self) {
+          // Intersecting with Edge workaround https://calendar.perfplanet.com/2017/progressive-image-loading-using-intersection-observer-and-sqip/#comment-102838
+          var isIntersecting = typeof entries[0].isIntersecting === 'boolean' ? entries[0].isIntersecting : entries[0].intersectionRatio > 0
+          if (isIntersecting) {
+            var mapsJS = document.createElement('script')
+            mapsJS.src = 'https://maps.googleapis.com/maps/api/js?callback=google_maps_init&key=' + api_key
+            document.getElementsByTagName('head')[0].appendChild(mapsJS)
+            self.unobserve(map)
+          }
+        },
+        options
+      )
+  
+      observer.observe(map)
+    }
+  }
+  
+  google_maps_lazyload("AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I")</script>
 
 
 
