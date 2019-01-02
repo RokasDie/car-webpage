@@ -284,6 +284,7 @@
     <script src="js/agency.min.js"></script>
 
      <!-- Scripts for Google Maps API -->
+     <!-- Does not work because intersection observer does not work on iOS -->
      <!-- <script src="js/maps.min.js"></script> -->
 
     <!-- Scripts for loading optimizations and others -->
@@ -297,7 +298,7 @@
         var uluru = {lat: 54.860025, lng: 23.954911};
         // The map, centered at Uluru
         var map = new google.maps.Map(
-            document.getElementById('map'), {zoom: 14, center: uluru});
+            document.getElementById('map'), {zoom: 15, center: uluru});
         // The marker, positioned at Uluru
         var marker = new google.maps.Marker({position: uluru, map: map});
       }
