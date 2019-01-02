@@ -731,6 +731,10 @@
     
     }(window, document));
 
+    window.requestIdleCallback(function () {
+      google_maps_lazyload("AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I")
+    })
+
     function google_maps_init() {
         'use strict'
         var vaidoto183 = {lat: 54.860025, lng: 23.954911}
@@ -751,8 +755,8 @@
       
         if (api_key) {
           var options = {
-            rootMargin: '0px',
-            threshold: 1
+            rootMargin: '30px',
+            threshold: 0.25
           }
       
           var map = document.getElementById('map')
@@ -775,4 +779,4 @@
         }
       }
       
-      google_maps_lazyload("AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I")
+      // google_maps_lazyload("AIzaSyCZ68VzvpHV7wiBt3P1NXsaUGlZJO5G06I")
