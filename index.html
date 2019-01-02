@@ -17,7 +17,16 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131658868-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131658868-1');
+</script>
+
 
   </head>
 
@@ -116,7 +125,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="ratai.html">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -130,7 +139,7 @@
               <p class="text-muted">Greitai ir kokybiškai sumontuosime ir subalnasuosime automobilio padangas</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="tepalai.html">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -144,7 +153,7 @@
               <p class="text-muted">Pakeisime tepalus naudodami kokybišką Valvoline produkciją</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="vaziuokle.html">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -158,7 +167,7 @@
               <p class="text-muted">Remontuojame su važiuokle susijusius gedimus</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" href="diagnostika.html">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -230,13 +239,14 @@
         <div class="row">
           <div class="col-md-5 text-muted">
             <img class="img-fluid" src="img/portfolio/servisas-laukas.jpg">
-            <div>Adresas: Vaidoto g. 183 (Panemunė), 45392 Kaunas</div>
+            <div class="text-muted-bold">Adresas: </div>
+            <div>Vaidoto g. 183 (Panemunė), 45392 Kaunas</div>
             <br>
-            <div>Darbo laikas: </div>
+            <div class="text-muted-bold">Darbo laikas: </div>
             <div>I-V: 8:30-18:00</div>
             <div>VI-VII: nedirbame</div>
             <br>
-            <div>Tel. nr: <a class="btn btn-call text-uppercase js-scroll-trigger" href="tel:+37068845247">+370 688 45 247</a></div>
+            <div class="text-muted-bold">Tel. nr: <a class="btn btn-call text-uppercase js-scroll-trigger" href="tel:+37068845247">+370 688 45 247</a></div>
           </div>
           <div class="col-md-7" data-lat="54.860025" data-lng="23.954911">
             <div id="map" class="map"></div>
@@ -283,10 +293,7 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
 
-     <!-- Scripts for Google Maps API -->
-     <!-- Does not work because intersection observer does not work on iOS -->
-     <!-- <script src="js/maps.min.js"></script> -->
-
+     <!-- Scripts for Lazy laoding -->
      <script src="js/lazyLoading.min.js"></script>
 
     <!-- Scripts for loading optimizations and others -->
