@@ -732,27 +732,6 @@
     }(window, document));
 
 
-
-
-    // window.requestIdleCallback(function () {
-    //   var vaidoto183 = {lat: 54.860025, lng: 23.954911}
-      
-    //     var map = new google.maps.Map(document.getElementById('map'), {
-    //       zoom: 15,
-    //       center: vaidoto183
-    //     })
-      
-    //     var marker = new google.maps.Marker({
-    //       position: vaidoto183,
-    //       map: map
-    //     })
-
-    //     var map = document.getElementById('map')
-    //     var mapsJS = document.createElement('script')
-    //             mapsJS.src = 'https://maps.googleapis.com/maps/api/js?callback=google_maps_init&key=' + api_key
-    //             document.getElementsByTagName('head')[0].appendChild(mapsJS)
-    // })
-
     function google_maps_init() {
         'use strict'
         var vaidoto183 = {lat: 54.860025, lng: 23.954911}
