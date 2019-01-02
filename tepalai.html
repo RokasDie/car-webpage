@@ -24,13 +24,7 @@
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131658868-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-131658868-1');
-</script>
+<script src="./gtag.js"></script>
 
   </head>
 
@@ -100,7 +94,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Siųsti</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" onclick="gtag_report_conversion(url)">Siųsti</button>
                 </div>
               </div>
             </form>
@@ -139,6 +133,34 @@
                             Pas mus naudojama kokybiška Valvoline produkcija.
                         </li>
                     </ul>
+                    <h4>Dirbame su šių markių automobiliais</h4>
+                    <ul>
+                      <li>
+                          Opel
+                      </li>
+                      <li>
+                          BMW
+                      </li>
+                      <li>
+                          Mercedes Benz
+                      </li>
+                      <li>
+                          Skoda
+                      </li>
+                      <li>
+                        Volkswagen
+                    </li>
+                    <li>
+                      Audi
+                  </li>
+                  <li>
+                    Honda
+                </li>
+
+                <li>
+                  Ir kitomis, puikiai aptarnausime bet kokią automobilių markę.
+              </li>
+                  </ul>
                 </div>
             </div>
         </section>
