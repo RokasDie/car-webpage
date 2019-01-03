@@ -752,7 +752,7 @@
       
         if (api_key) {
           var options = {
-            rootMargin: '-100px',
+            rootMargin: '-500px',
             threshold: 0
           }
       
