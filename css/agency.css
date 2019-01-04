@@ -111,6 +111,15 @@ section h3.section-subheading {
   font-weight: 400;
 }
 
+::-moz-selection {
+  background: #feb836;
+  text-shadow: none;
+}
+
+.text-muted-bold {
+  font-weight: bold;
+}
+
 ::selection {
   background: #feb836;
   text-shadow: none;
@@ -638,7 +647,7 @@ section#reservation .form-group {
 
 section#reservation .form-group input,
 section#reservation .form-group textarea {
-  padding: 20px;
+  padding: 10px;
 }
 
 section#reservation .form-group input.form-control {
@@ -646,7 +655,7 @@ section#reservation .form-group input.form-control {
 }
 
 section#reservation .form-group textarea.form-control {
-  height: 248px;
+  height: 189px;
 }
 
 section#reservation .form-control:focus {
