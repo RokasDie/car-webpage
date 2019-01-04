@@ -98,6 +98,11 @@ section {
   }
 }
 
+.e-mail {
+  color: $gray-650;
+  font-weight: 400;
+}
+
 // Highlight color customization
 ::-moz-selection {
   background: $primary;
