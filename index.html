@@ -25,23 +25,10 @@
 
   <script src="./gtag.js"></script>
   <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-771972095/zFqfCK3W15IBEP-3jfAC',
-          'event_callback': callback
-      });
-      return false;
-    }
+    
     </script>
     <script>
-      gtag('config', 'AW-771972095/ZdUrCMDa15IBEP-3jfAC', {
-        'phone_conversion_number': '+37068845247'
-      });
+ 
     </script>
 
 
@@ -238,7 +225,7 @@
                 <div class="clearfix"></div>
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
-                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Siųsti</button>
+                  <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit" onclick="ga('send', 'event', ['Susisiekti su servisu'], ['Išsiųsti žinutę'])">Siųsti</button>
                 </div>
               </div>
             </form>
