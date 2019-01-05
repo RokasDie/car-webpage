@@ -57,6 +57,10 @@
     $('.navbar').removeClass('d-none');
   })
 
+  $('#sendMessageButton').click(function () {
+    gtag_report_conversion()
+  })
+
 
 })(jQuery); // End of use strict
 
