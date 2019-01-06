@@ -1,4 +1,6 @@
-<IfModule mod_expires.c>
+Header unset ETag
+FileETag None
+
   ExpiresActive On
 
   # Images
@@ -21,4 +23,6 @@
   # Others
   ExpiresByType application/pdf "access plus 1 day"
   ExpiresByType application/x-shockwave-flash "access plus 1 day"
-</IfModule>
+
+  
+
