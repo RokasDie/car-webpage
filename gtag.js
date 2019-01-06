@@ -21,7 +21,7 @@
     });
     return false;
   }
-
+  //phone call conversion
   gtag('config', 'AW-771972095/ZdUrCMDa15IBEP-3jfAC', {
         'phone_conversion_number': '+37068845247'
       });
