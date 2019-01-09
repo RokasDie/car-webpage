@@ -30,7 +30,7 @@ function google_maps_init() {
           var isIntersecting = typeof entries[0].isIntersecting === 'boolean' ? entries[0].isIntersecting : entries[0].intersectionRatio > 0
           if (isIntersecting) {
             var mapsJS = document.createElement('script')
-            mapsJS.src = `https://maps.googleapis.com/maps/api/js?callback=google_maps_init&key=${api_key}&language=lt&region=LTU`
+            mapsJS.src = 'https://maps.googleapis.com/maps/api/js?callback=google_maps_init&key=' + api_key +'&language=lt&region=LTU'
             document.getElementsByTagName('head')[0].appendChild(mapsJS)
             self.unobserve(map)
           }
