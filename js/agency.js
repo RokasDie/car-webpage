@@ -61,6 +61,25 @@
     gtag_report_conversion()
   })
 
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#212529"
+        },
+        "button": {
+          "background": "#feb836",
+          "text": "#ffffff"
+        }
+      },
+      "position": "bottom-right",
+      "content": {
+        "message": "Informuojame, kad šioje svetainėje naudojami slapukai (angl. cookies). Sutikdami, paspauskite mygtuką „Sutinku“ arba naršykite toliau. Savo duotą sutikimą bet kada galėsite atšaukti pakeisdami savo interneto naršyklės nustatymus ir ištrindami įrašytus slapukus. ",
+        "dismiss": "Sutinku",
+        "link": "Slapukų tvarkymas"
+      }
+    })});
+
 
 })(jQuery); // End of use strict
 
